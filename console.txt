@@ -1,0 +1,8 @@
+laravel new meckano
+cd meckano/
+valet
+valet link
+composer require laravel/breeze --dev
+breeze:install
+art breeze:install
+php artisan migrate
