@@ -4,7 +4,13 @@ Hi, I'm Itai Nathaniel. I'm doing PHP for ~25 years now, and Laravel for ~10 yea
 
 ## Installation
 
-I've attached a `.env.example` file with all the relevant data. You will only have to setup the DB name, user and password and save it as a `.env` file.
+I've attached a `.env.example` file with all the relevant data. You will only have to setup the DB name, user and password and save it as a `.env` file, using a command like
+
+```
+cp .env.example .env
+```
+
+or with some mouse and keyboard clicks.
 
 After that, you'll have to run the migrations using the following command:
 
