@@ -22,9 +22,12 @@ const form = useForm({
     remember: false,
 });
 
-const submit = () => {
-    form.post(route('login'), {
-        onFinish: () => form.reset('password'),
+const submit = async () => {
+    await axios.get('/sanctum/csrf-cookie').then(response => {
+        console.log('res', response)
+        form.post(route('login'), {
+            onFinish: () => form.reset('password'),
+        });
     });
 };
 </script>
